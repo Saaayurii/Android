@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProductApp</string>
+    <string name="products_title">Список товаров</string>
+    <string name="detail_name_label">Название:</string>
+    <string name="detail_description_label">Описание:</string>
+    <string name="detail_price_label">Цена:</string>
+    <string name="price_format">%.2f грн</string>
+</resources>

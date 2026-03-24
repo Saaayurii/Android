@@ -1,0 +1,82 @@
+version: '3.8'
+
+services:
+  build-practical1-basic:
+    build: .
+    volumes:
+      - ./practical1/basic:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical1-advanced:
+    build: .
+    volumes:
+      - ./practical1/advanced:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical2-basic:
+    build: .
+    volumes:
+      - ./practical2/basic:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical2-advanced:
+    build: .
+    volumes:
+      - ./practical2/advanced:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical3-basic:
+    build: .
+    volumes:
+      - ./practical3/basic:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical3-advanced:
+    build: .
+    volumes:
+      - ./practical3/advanced:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical4-basic:
+    build: .
+    volumes:
+      - ./practical4/basic:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home
+
+  build-practical4-advanced:
+    build: .
+    volumes:
+      - ./practical4/advanced:/workspace
+    working_dir: /workspace
+    command: gradle assembleDebug
+    environment:
+      - ANDROID_SDK_ROOT=/opt/android-sdk
+      - GRADLE_USER_HOME=/workspace/.gradle-home

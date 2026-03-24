@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="amount_label">Сумма (в гривнях):</string>
+    <string name="amount_hint">Введите сумму в UAH</string>
+    <string name="currency_label">Выберите валюту:</string>
+    <string name="btn_convert">Конвертировать</string>
+    <string name="result_format">%.2f UAH = %.4f %s</string>
+    <string name="enter_amount">Введите сумму</string>
+    <string name="invalid_number">Неверный формат числа</string>
+</resources>

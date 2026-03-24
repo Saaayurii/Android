@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CountriesApp</string>
+    <string name="country_name_label">Країна:</string>
+    <string name="capital_label">Столиця:</string>
+</resources>

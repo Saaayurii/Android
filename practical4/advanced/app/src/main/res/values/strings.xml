@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CountriesAdvancedApp</string>
+    <string name="search_hint">Пошук країни...</string>
+    <string name="add_country">Додати країну</string>
+    <string name="add_country_title">Додати нову країну</string>
+    <string name="label_name">Назва країни:</string>
+    <string name="hint_name">Введіть назву</string>
+    <string name="label_capital">Столиця:</string>
+    <string name="hint_capital">Введіть столицю</string>
+    <string name="label_population">Населення:</string>
+    <string name="hint_population">Кількість жителів</string>
+    <string name="label_area">Площа (км²):</string>
+    <string name="hint_area">Площа у кв. км</string>
+    <string name="btn_add">Додати</string>
+    <string name="btn_cancel">Скасувати</string>
+    <string name="capital_detail">Столиця: %1$s</string>
+    <string name="population_detail">Населення: %1$d чол.</string>
+    <string name="area_detail">Площа: %1$.1f км²</string>
+    <string name="country_added">Країну додано!</string>
+    <string name="fill_all_fields">Заповніть усі поля</string>
+    <string name="invalid_number">Невірний формат числа</string>
+</resources>

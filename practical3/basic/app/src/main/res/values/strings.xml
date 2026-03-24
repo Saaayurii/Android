@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CoordinatesApp</string>
+    <string name="x_label">Координата X:</string>
+    <string name="x_hint">Введите X</string>
+    <string name="y_label">Координата Y:</string>
+    <string name="y_hint">Введите Y</string>
+    <string name="btn_send">Отправить</string>
+    <string name="enter_coordinates">Введите координаты X и Y</string>
+    <string name="coordinates_format">Координаты: (%1$s, %2$s)</string>
+    <string name="coordinates_placeholder">Координаты: (X, Y)</string>
+</resources>

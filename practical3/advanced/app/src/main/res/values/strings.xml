@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaskFilterApp</string>
+    <string name="select_categories">Выберите категории</string>
+    <string name="category_work">Работа</string>
+    <string name="category_home">Дом</string>
+    <string name="category_sport">Спорт</string>
+    <string name="btn_save_view">Сохранить и просмотреть</string>
+    <string name="filtered_tasks_title">Задачи по категориям</string>
+    <string name="no_tasks_selected">Нет выбранных категорий</string>
+</resources>

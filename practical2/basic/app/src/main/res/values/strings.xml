@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NavigationApp</string>
+    <string name="main_screen_title">Главный экран</string>
+    <string name="btn_go_to_second">Перейти на второй экран</string>
+    <string name="second_screen_welcome">Добро пожаловать на второй экран!</string>
+    <string name="btn_back">Назад</string>
+</resources>
