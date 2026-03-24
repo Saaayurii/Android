@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Генератор паролей"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Длина пароля:"
+            android:textSize="16sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="56"
+            android:progress="8"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Длина: 12 символов"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkUppercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заглавные буквы (A-Z)"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkLowercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Строчные буквы (a-z)"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkDigits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цифры (0-9)"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/checkSymbols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Специальные символы (!@#$%...)"
+            android:checked="false"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сгенерировать пароль"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="—"
+                android:textSize="18sp"
+                android:textIsSelectable="true"
+                android:fontFamily="monospace"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Скопировать"
+            android:enabled="false"/>
+    </LinearLayout>
+</ScrollView>

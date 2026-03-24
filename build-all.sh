@@ -12,6 +12,18 @@ PROJECTS=(
     "practical3/advanced"
     "practical4/basic"
     "practical4/advanced"
+    "practical5/basic"
+    "practical5/advanced"
+    "practical6/basic"
+    "practical6/advanced"
+    "practical7/basic"
+    "practical7/advanced"
+    "practical8/basic"
+    "practical8/advanced"
+    "practical9/basic"
+    "practical9/advanced"
+    "practical10/basic"
+    "practical10/advanced"
 )
 
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"

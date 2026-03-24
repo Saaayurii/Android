@@ -17,6 +17,24 @@
 ├── practical4/
 │   ├── basic/      RecyclerView — список стран и столиц
 │   └── advanced/   Страны с поиском, деталями и добавлением
+├── practical5/
+│   ├── basic/      AlertDialog — удаление файла с подтверждением
+│   └── advanced/   Диалог числового ввода с результатом +10 и сбросом
+├── practical6/
+│   ├── basic/      Сохранение настроек уведомлений в SharedPreferences
+│   └── advanced/   Список покупок (название/цена/кол-во) в SharedPreferences
+├── practical7/
+│   ├── basic/      Retrofit + JSONPlaceholder — список постов
+│   └── advanced/   Open Library API — список книг с избранным
+├── practical8/
+│   ├── basic/      Room DB — учёт студентов (имя, оценка)
+│   └── advanced/   Room DB — спортивные достижения с сортировкой и фильтром
+├── practical9/
+│   ├── basic/      RotateAnimation + ScaleAnimation при нажатии кнопки
+│   └── advanced/   Кастомная анимация перехода через MotionLayout
+├── practical10/
+│   ├── basic/      Таймер обратного отсчёта до выбранной даты и времени
+│   └── advanced/   Генератор случайных паролей с параметрами безопасности
 ├── Dockerfile
 ├── docker-compose.yml
 └── build-all.sh
@@ -36,7 +54,10 @@ docker-compose run practical1-basic
 
 Заменить `practical1-basic` на нужный сервис:
 `practical1-basic`, `practical1-advanced`, `practical2-basic`, `practical2-advanced`,
-`practical3-basic`, `practical3-advanced`, `practical4-basic`, `practical4-advanced`
+`practical3-basic`, `practical3-advanced`, `practical4-basic`, `practical4-advanced`,
+`practical5-basic`, `practical5-advanced`, `practical6-basic`, `practical6-advanced`,
+`practical7-basic`, `practical7-advanced`, `practical8-basic`, `practical8-advanced`,
+`practical9-basic`, `practical9-advanced`, `practical10-basic`, `practical10-advanced`
 
 ### Собрать все проекты
 
@@ -90,10 +111,62 @@ cd practical1/basic
 | Базовый | Список стран и их столиц в RecyclerView (10 стран) |
 | Усложнённый | Список стран с поиском, экраном деталей (население, площадь) и экраном добавления новой страны |
 
+### Практическая работа №5
+**Тема:** Работа с диалогами в Android
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | AlertDialog с вопросом "Удалить ли файл?": OK → "Файл удалён", Cancel → "Удаление отменено" |
+| Усложнённый | Диалог с числовым вводом (EditText): результат = введённое число + 10, кнопка сброса до 0 |
+
+### Практическая работа №6
+**Тема:** Использование SharedPreferences для хранения данных
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | Switch для включения/выключения уведомлений; состояние сохраняется в SharedPreferences и восстанавливается при запуске |
+| Усложнённый | Список покупок (название, цена, количество) с добавлением, редактированием и удалением; данные сохраняются в SharedPreferences |
+
+### Практическая работа №7
+**Тема:** Работа с REST API в Android
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | Retrofit + [JSONPlaceholder](https://jsonplaceholder.typicode.com/) — загрузка и отображение 20 постов в RecyclerView |
+| Усложнённый | [Open Library API](https://openlibrary.org/) — поиск книг, отображение списка, добавление в избранное (сохраняется в SharedPreferences) |
+
+> **Примечание:** Twitter/X API более не является публичным и бесплатным, поэтому в базовом блоке используется JSONPlaceholder как аналог публичного REST API.
+
+### Практическая работа №8
+**Тема:** Работа с базой данных Room в Android
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | Room DB + LiveData — учёт студентов: добавление (имя, оценка 1–10), удаление, отображение списка |
+| Усложнённый | Room DB — спортивные достижения: добавление через DatePickerDialog, сортировка по дате тренировки, фильтрация по виду спорта через Spinner |
+
+### Практическая работа №9
+**Тема:** Работа с анимациями в Android
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | `RotateAnimation` (360°) + `ScaleAnimation` на кнопке при нажатии |
+| Усложнённый | `MotionLayout` — анимированный переход объекта между двумя состояниями по нажатию кнопки |
+
+### Практическая работа №10
+**Тема:** Разработка мини-приложений для Android
+
+| Блок | Задание (вариант 9) |
+|------|----------------------|
+| Базовый | Таймер обратного отсчёта: выбор даты и времени события через `DatePickerDialog` + `TimePickerDialog`, отображение оставшегося времени в формате `Д дн. ЧЧ:ММ:СС` |
+| Усложнённый | Генератор паролей: настройка длины (SeekBar), выбор типов символов (CheckBox), индикатор надёжности, копирование в буфер обмена |
+
 ## Технический стек
 
 - **Язык:** Java
 - **minSdk:** 21 (Android 5.0)
 - **targetSdk / compileSdk:** 34
 - **Gradle:** 8.2 + Android Gradle Plugin 8.1.0
-- **Зависимости:** `androidx.appcompat:appcompat:1.6.1`, `com.google.android.material:material:1.9.0`, `androidx.constraintlayout:constraintlayout:2.1.4`, `androidx.recyclerview:recyclerview:1.2.1`
+- **Основные зависимости:** `appcompat:1.6.1`, `material:1.9.0`, `constraintlayout:2.1.4`, `recyclerview:1.3.1`
+- **Дополнительно (practical7):** `retrofit2:2.9.0`, `converter-gson:2.9.0`
+- **Дополнительно (practical8):** `room-runtime:2.5.0`, `lifecycle-livedata:2.6.1`
